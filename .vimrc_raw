@@ -1,0 +1,15 @@
+syntax on
+
+set backspace=2
+
+set nu
+
+set tabstop=4
+
+set sw=4
+
+set autoindent
+
+set cindent
+
+set ls=2
