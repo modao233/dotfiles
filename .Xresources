@@ -1,0 +1,97 @@
+! scrollbar 
+XTerm.vt100.scrollBar: true 
+XTerm.vt100.scrollBar.width: 8
+XTerm*rightScrollBar: true
+
+!NOTE: understand configure
+XTerm*locale: true
+XTerm*utf8Title: true
+XTerm*fontMenu*fontdefault*Label: Default
+XTerm*faceSize: 15
+XTerm*faceSize1: 15
+XTerm*faceSize2: 15
+XTerm*faceSize3: 15
+XTerm*faceSize4: 15
+XTerm*faceSize5: 15
+XTerm*faceSize6: 15
+XTerm.cjkWidth:true
+!XTerm.vt100.fastScroll: true
+!XTerm.vt100.alternateScroll: true
+!XTerm.vt100.jumpScroll: true
+!XTerm*scrollBar: false
+!XTerm*rightScrollBar: false
+!XTerm*jumpScroll:  false
+!bell禁止
+XTerm.vt100.bellIsUrgent : false
+
+! Make 'Alt' key behave as on other terminal emulators
+XTerm.vt100.metaSendsEscape: true
+
+!Fix the backspace key
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+! saveline
+XTerm.vt100.saveLines: 4096
+XTerm*SaveLines: 10000
+
+! copy & paste 
+XTerm*VT100.translations: #override \n\
+		<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+		Ctrl Shift <Key>C: copy-selection (CLIPBOARD) \n\
+		Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+		Ctrl <Key>P: print() \n
+
+! terminal color
+! define some color 
+#define base00 #181818
+#define base01 #282828
+#define base02 #383838
+#define base03 #585858
+#define base04 #b8b8b8
+#define base05 #d8d8d8
+#define base06 #e8e8e8
+#define base07 #f8f8f8
+#define base08 #ab4642
+#define base09 #dc9656
+#define base0A #f7ca88
+#define base0B #a1b56c
+#define base0C #86c1b9
+#define base0D #7cafc2
+#define base0E #ba8baf
+#define base0F #a16946
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+XTerm.vt100.foreground: base05
+XTerm.vt100.background: base00
+
+! English font 
+xterm*faceName: Monaco:antialias=True:pixelsize=15
+!XTerm.vt100.faceName: nerd-fonts-hack:antialias=True:pixelsize=20
+
+! Chinese font 
+xterm*faceNameDoublesize:WenQuanYi Micro Hei:antialias=True:pixelsize=15
+
+! line spacing
+XTerm.vt100.scaleHeight: 1.01
+
+!input method 
+XTerm*inputMethod:fcitx 
+! Xterm*faceSize: 20
+Xterm.VT100*geometry: 100x30
