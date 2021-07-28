@@ -82,11 +82,12 @@ XTerm.vt100.foreground: base05
 XTerm.vt100.background: base00
 
 ! English font 
-xterm*faceName: Monaco:antialias=True:pixelsize=15
-!XTerm.vt100.faceName: nerd-fonts-hack:antialias=True:pixelsize=20
-
+!xterm*faceName: Monaco:antialias=True:pixelsize=15
+!XTerm.vt100.faceName: Sarasa Mono SC Nerd:antialias=True:pixelsize=20
+XTerm.vt100.faceName: Sarasa Mono SC Nerd:antialias=True
 ! Chinese font 
-xterm*faceNameDoublesize:WenQuanYi Micro Hei:antialias=True:pixelsize=15
+!xterm*faceNameDoublesize: Sarasa Mono SC Nerd:antialias=True:pixelsize=15
+xterm*faceNameDoublesize: Sarasa Mono SC Nerd:antialias=True
 
 ! line spacing
 XTerm.vt100.scaleHeight: 1.01
